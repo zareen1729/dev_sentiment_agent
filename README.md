@@ -8,18 +8,27 @@ An AI-powered agent that scrapes dev forums like Reddit, analyzes community sent
 - LLM-based Q&A with LangChain + OpenAI
 - Streamlit UI for prompt interaction
 
-## Run Backend
+## Setup Instructions
+
+### Prerequisites
+- Docker + Docker Compose
+- OpenAI API Key
+
+### Run the Project
+
 ```bash
-cd backend
-uvicorn main:app --reload
+git clone https://github.com/yourusername/dev_sentiment_agent.git
+cd dev_sentiment_agent
+docker-compose up --build
 ```
 
-## Run Frontend
-```bash
-cd frontend
-streamlit run app.py
-```
+### Access the UI
+Visit [http://localhost:8501](http://localhost:8501)
 
-## Example
-"What is the mood on LangChain this week?"
+### Example Prompts
+- "What's the mood on LangChain this week?"
+- "Which vector database is most discussed lately?"
 
+### Notes
+- Replace mock data with Bright Data API integration in `scraper.py`.
+- Add error handling and logging for production readiness.
