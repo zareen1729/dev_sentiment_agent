@@ -17,7 +17,7 @@ An AI-powered agent that scrapes dev forums like Reddit, analyzes community sent
 ### Run the Project
 
 ```bash
-git clone https://github.com/yourusername/dev_sentiment_agent.git
+git clone https://github.com/zareen1729/dev_sentiment_agent.git
 cd dev_sentiment_agent
 docker-compose up --build
 ```
